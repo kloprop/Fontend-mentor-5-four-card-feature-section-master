@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --font-color: grey;
+  --border--card--1: hsl(180, 62%, 55%);
+  --border--card--2: hsl(0, 78%, 62%);
+  --border--card--3: hsl(34, 97%, 64%);
+  --border--card--4: hsl(212, 86%, 64%);
+  --heading--dark: hsl(234, 12%, 34%);
+  --box-shadow: hsl(0, 0%, 98%);
+}
+body {
+  min-height: 100vh;
+  color: var(--font-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+.section-container {
+  margin: 0 auto;
+  max-width: 80vw;
+}
+.container-flex {
+  display: flex;
+  align-items: center;
+}
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+h1,
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+h3 {
+  margin: 0;
+}
+h1 {
+  font-weight: 400;
+}
+h1 + h2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+h2,
+h3 {
+  color: var(--heading--dark);
+}
+.card {
+  box-shadow: 0 0 5px 10px var(--box-shadow);
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+}
+.card:nth-child(1) {
+  border-top: 4px solid var(--border--card--1);
+}
+.card:nth-child(2) {
+  border-top: 4px solid var(--border--card--2);
+}
+.card:nth-child(3) {
+  border-top: 4px solid var(--border--card--3);
+}
+.card:nth-child(4) {
+  border-top: 4px solid var(--border--card--4);
+}
+
+.card p {
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.card__image {
+  text-align: right;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 0.8rem;
+  }
+  header {
+    margin-bottom: 3rem;
+  }
+  .section-container {
+    min-width: 90vw;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+  .container-flex:nth-child(1) {
+    grid-row: 1 / span 2;
+  }
+  .container-flex:nth-child(4) {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+}
