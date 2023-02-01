@@ -25,6 +25,7 @@ body {
 .container-flex {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 header {
   text-align: center;
@@ -54,6 +55,7 @@ h3 {
   padding: 1.5rem 2rem;
   margin-bottom: 3rem;
   border-radius: 5px;
+  width: 100%;
 }
 .card:nth-child(1) {
   border-top: 4px solid var(--border--card--1);
