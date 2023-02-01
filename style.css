@@ -20,7 +20,7 @@ body {
 }
 .section-container {
   margin: 0 auto;
-  max-width: 80vw;
+  width: 80vw;
 }
 .container-flex {
   display: flex;
@@ -84,16 +84,14 @@ h3 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   body {
     font-size: 0.8rem;
   }
   header {
     margin-bottom: 3rem;
   }
-  .section-container {
-    min-width: 90vw;
-  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
