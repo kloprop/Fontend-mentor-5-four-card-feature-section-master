@@ -57,16 +57,17 @@ h3 {
   border-radius: 5px;
   width: 100%;
 }
-.card:nth-child(1) {
+.cards-container .container-flex:nth-child(1) .card {
   border-top: 4px solid var(--border--card--1);
 }
-.card:nth-child(2) {
+.cards-container .card:nth-child(2) {
   border-top: 4px solid var(--border--card--2);
 }
-.card:nth-child(3) {
+.cards-container .card:nth-child(3) {
   border-top: 4px solid var(--border--card--3);
 }
-.card:nth-child(4) {
+
+.cards-container .container-flex:nth-child(4) .card {
   border-top: 4px solid var(--border--card--4);
 }
 
